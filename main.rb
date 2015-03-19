@@ -48,15 +48,15 @@ if !url then
 end
 
 #iterate through all the tweets and respond to them
-# for tweet in tweets
-tweet = tweets[0]
+for tweet in tweets
+# tweet = tweets[0]
 
 	username = tweet["user"]["screen_name"]
-	puts username
+	puts 'tweeting at --> @' + username
 
-	success = post_tweet(username, queryString, url)
+	# success = post_tweet(username, queryString, url)
 
-	puts 'tweet post result: ' + success
-# end
+	# puts 'tweet post result: ' + success
+end
 
 puts 'Done'

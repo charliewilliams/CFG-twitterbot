@@ -6,7 +6,7 @@ def image_search(queryString)
 	json = JSON.parse(open(query_url).read)
 	url = json["responseData"]["results"][0]["url"]
 
-	puts url
+	puts 'got a url! it is: ' + url
 
 	#return the image URL to the calling script
 	url

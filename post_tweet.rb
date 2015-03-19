@@ -7,7 +7,7 @@ def post_tweet(username, noun, imgURL)
 	address = URI("#{baseurl}#{path}")
 	request = Net::HTTP::Post.new address.request_uri
 	request.set_form_data(
-	  "status" => "#{username}- Sorry you're feeling sad, here's a #{noun}! #{imgURL}",
+	  "status" => "@#{username}- Sorry you're feeling sad, here's a #{noun}! #{imgURL}",
 	)
 
 	# Set up HTTP.
