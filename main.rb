@@ -21,8 +21,8 @@ require './image_search'
 require './post_tweet'
 
 # Set up OAuth
-$consumer_key = OAuth::Consumer.new($twitter_api_key, $twitter_api_secret)
-$access_token = OAuth::Token.new($twitter_access_token, $twitter_access_secret)
+$oauth_consumer = OAuth::Consumer.new($twitter_api_key, $twitter_api_secret)
+$oauth_token = OAuth::Token.new($twitter_access_token, $twitter_access_secret)
 
 queryString = ARGV[0]
 

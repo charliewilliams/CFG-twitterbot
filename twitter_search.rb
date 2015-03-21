@@ -14,7 +14,7 @@ def twitter_search(queryString)
   http.verify_mode = OpenSSL::SSL::VERIFY_PEER
 
   # Issue the request.
-  request.oauth! http, $consumer_key, $access_token
+  request.oauth! http, $oauth_consumer, $oauth_token
   http.start
   response = http.request request
 
